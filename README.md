@@ -1,9 +1,11 @@
-### О проекте 
+### О проекте
+
 RESTFull API сервис, который позволяет пользователям регистрироваться,
 аутентифицироваться и управлять списком своих избранных фильмов. Интеграция с Kinopoisk
 API Unofficial для получения информации о фильмах.
 
 ### Технологический стек:
+
 - FastAPI
 - SQLAlchemy 2.0
 - AsyncIO
@@ -26,3 +28,8 @@ docker run -p 5432:5432 --name postgres_movie -e POSTGRES_USER=postgres -e POSTG
    API_KEY_KINOPOISK.
 5. Проведите миграции: ```alembic upgrade head```.
 6. Запуск приложения: ```uvicorn app.main:app --reload```.
+
+### Postman
+
+Для работы с Postman, можете импортировать файл ```api favorite
+kinopoisk.postman_collection.json```, он находится в главной директории.
