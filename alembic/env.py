@@ -5,7 +5,7 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from config import DB_USER, DB_NAME, DB_PASS, DB_HOST, DB_PORT
+from core.settings import DB_USER, DB_NAME, DB_PASS, DB_HOST, DB_PORT
 from app.my_movies.models import Base
 
 # this is the Alembic Config object, which provides
